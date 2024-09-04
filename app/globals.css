@@ -89,3 +89,11 @@
     -2px 0 10px rgba(255, 0, 255, 0.1),        /* outer left magenta */
     2px 0 10px rgba(0, 255, 255, 0.1); 
 }
+
+.written {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+}
+.text-container {
+  max-width: 80%; /* adjust the value to match the image width */
+}
