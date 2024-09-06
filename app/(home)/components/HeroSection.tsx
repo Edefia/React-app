@@ -1,16 +1,22 @@
 // import { MovingBorderBtn } from "@/components/hover-border-gradient";
+"use client";
 import React from "react";
 import Title from "./Title";
 import { FlipWords } from "@/components/flip-words";
 import { HoverBorderGradient } from "@/components/hover-border-gradient";
 import Image from 'next/image'
 import IMG_0295 from "@/images/IMG_0295.jpg"
+import { Button } from "@/components/moving-border";
+
+
+      
+
 
 export default function HeroSection(){
     const words = ["Wordpress Developer", "Mongo DB Admin", "PostgreSQL DB Admin", "Full Stack Developer", "Tech Enthusiast", "Freelancer"];
     return (
         <div className="min-h-[60vh] flex flex-col-reverse gap-15 sm:gap-20 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
-            <div className="space-y-10 text-center lg:text-left text-container">
+            <div className="space-y-10 text-center lg:text-left">
                 <h1 className="text-4xl lg:text-7xl written font-bold">
                     Nice to Meet You!
                     <br /> <span className="underline underline-offset-8 decoration-green-500">{"I am Hebra."}</span>
@@ -26,11 +32,16 @@ export default function HeroSection(){
             <div className="relative sm:py-20 md:py-10 ">
                 <div className="w-80 h-80 space-y-2 border-white-[2px]  relative">
                 <div>
-                    <Image
-                    src={IMG_0295}
-                    alt="Hebra Dalton"
-                    className="rounded-full object-cover h-60 md:h-120 lg:h-150 w-60 md:w-120 lg:w-150 circ"
-                    />
+                    <Button
+                        className="bg-white rounded-3xl dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    >
+                        <Image
+                        src={IMG_0295}
+                        alt="Hebra Dalton"
+                        className="rounded-3xl aspect-square object-cover h-60 md:h-120 lg:h-150 w-60 md:w-120 lg:w-150 circ"
+                        />
+                    </Button>
+                    
                 </div>
                 </div>
                 <div className="absolute bottom-5 sm:bottom-14 written left-0 sm:-left-10">
